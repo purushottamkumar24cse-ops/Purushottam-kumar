@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purushottam Kumar — Computer Science Student & Developer</title>
+  <meta name="description" content="Personal portfolio of Purushottam Kumar, B.Tech Computer Science Engineering student at Indus University. Exploring software engineering, web technologies, and digital craftsmanship.">
+  <meta name="keywords" content="Purushottam Kumar, Computer Science, Indus University, Web Developer, Portfolio, Software Engineering, Python, JavaScript">
+  <meta name="author" content="Purushottam Kumar">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Purushottam Kumar — Computer Science Student & Developer">
+  <meta property="og:description" content="Editorial-grade portfolio exploring software engineering, algorithms, and thoughtful web interfaces.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Outer Dark Enclosure -->
+  <div class="outer-viewport">
+    
+    <!-- Main Pastel Canvas -->
+    <div class="portfolio-canvas" id="top">
+
+      <!-- CSS-Only Decorative Background Graphics & Curves -->
+      <div class="canvas-bg-decorations" aria-hidden="true">
+        <div class="decor-circle circle-huge-1"></div>
+        <div class="decor-circle circle-huge-2"></div>
+        <div class="decor-circle circle-mid-1"></div>
+        <div class="decor-ellipse ellipse-1"></div>
+        <div class="decor-ellipse ellipse-2"></div>
+        <div class="decor-grid-lines"></div>
+        <div class="decor-radial-glow glow-top"></div>
+        <div class="decor-radial-glow glow-bottom"></div>
+
+        <!-- Floating Low-Opacity Developer Glyphs -->
+        <span class="floating-glyph glyph-1">{ }</span>
+        <span class="floating-glyph glyph-2">&lt;/&gt;</span>
+        <span class="floating-glyph glyph-3">01</span>
+        <span class="floating-glyph glyph-4">Python</span>
+        <span class="floating-glyph glyph-5">CSS3</span>
+        <span class="floating-glyph glyph-6">JS</span>
+        <span class="floating-glyph glyph-7">02</span>
+      </div>
+
+      <!-- Main Central Glass Presentation Frame -->
+      <div class="central-presentation-frame">
+
+        <!-- Minimal Sticky Navbar inside frame -->
+        <header class="navbar-wrapper" id="main-header">
+          <nav class="navbar" aria-label="Main Navigation">
+            <a href="#top" class="brand-logo" aria-label="Purushottam Kumar Home">
+              <span class="brand-name">Purushottam Kumar</span>
+              <span class="brand-badge">B.Tech CSE</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-menu" id="nav-menu">
+              <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Right CTA Button & Hamburger -->
+            <div class="nav-actions">
+              <a href="#contact" class="btn-pill btn-nav-connect">
+                <span>Let's Connect</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Mobile Menu Drawer Overlay -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+          <div class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+              <span class="mobile-brand">Purushottam Kumar</span>
+              <button class="drawer-close-btn" id="drawer-close" aria-label="Close menu">&times;</button>
+            </div>
+            <ul class="mobile-nav-list">
+              <li><a href="#about" class="mobile-nav-link"><span class="mob-num">01</span> About</a></li>
+              <li><a href="#skills" class="mobile-nav-link"><span class="mob-num">02</span> Skills & Tech</a></li>
+              <li><a href="#projects" class="mobile-nav-link"><span class="mob-num">03</span> Selected Work</a></li>
+              <li><a href="#education" class="mobile-nav-link"><span class="mob-num">04</span> Education</a></li>
+              <li><a href="#contact" class="mobile-nav-link"><span class="mob-num">05</span> Contact</a></li>
+            </ul>
+            <div class="mobile-drawer-footer">
+              <p class="mobile-meta">Indus University · 2024–2028</p>
+              <a href="#contact" class="btn-pill btn-primary-dark w-full mobile-connect-btn">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+
+        <main id="main-content">
+
+          <!-- HERO SECTION -->
+          <section class="hero-section" id="hero" aria-labelledby="hero-title">
+            <div class="hero-inner">
+              
+              <!-- Subtle Upper Status Pill -->
+              <div class="hero-status-tag reveal-item">
+                <span class="status-pulse-dot"></span>
+                <span class="status-label">Hello, I'm Purushottam.</span>
+              </div>
+
+              <!-- Main Editorial Serif Headline with Masked Reveal -->
+              <h1 class="hero-headline reveal-item" id="hero-title">
+                <span class="headline-mask-line"><span class="headline-mask-inner">Building ideas into</span></span>
+                <span class="headline-mask-line"><span class="headline-mask-inner"><em class="serif-accent">meaningful digital experiences.</em></span></span>
+              </h1>
+
+              <!-- Hero Subtext -->
+              <p class="hero-subtext reveal-item">
+                Computer Science Engineering student at Indus University, passionate about software development, web technologies, programming and building useful digital products.
+              </p>
+
+              <!-- Hero Action Buttons -->
+              <div class="hero-cta-group reveal-item">
+                <a href="#projects" class="btn-pill btn-primary-dark">
+                  <span>Explore My Work</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 2.5V11.5M7 11.5L11 7.5M7 11.5L3 7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#resume-modal" class="btn-pill btn-subtle-glass" id="open-resume-btn">
+                  <span>Download CV</span>
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M6.5 2V8.5M6.5 8.5L9 6M6.5 8.5L4 6M2 10.5H11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Hero Minimal Lower Indicator Detail -->
+              <div class="hero-bottom-detail reveal-item">
+                <div class="hero-detail-left">
+                  <span class="corner-dot-icon" aria-hidden="true"></span>
+                  <span class="corner-text">Crafted with HTML5, CSS3 & JavaScript</span>
+                </div>
+                <a href="#about" class="hero-scroll-prompt" aria-label="Scroll down to About section">
+                  <span class="scroll-text">Scroll to explore</span>
+                  <span class="scroll-line-anim"></span>
+                </a>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ABOUT SECTION -->
+          <section class="section-container about-section" id="about" aria-labelledby="about-heading">
+            <div class="section-eyebrow reveal-item">
+              <span class="eyebrow-num">01</span>
+              <span class="eyebrow-text">About Me</span>
+            </div>
+
+            <div class="about-grid">
+              <!-- Left Column: Large Editorial Statement with Masked Reveal -->
+              <div class="about-col-left reveal-item">
+                <h2 class="about-headline" id="about-heading">
+                  <span class="headline-mask-line"><span class="headline-mask-inner">I enjoy turning ideas into simple,</span></span>
+                  <span class="headline-mask-line"><span class="headline-mask-inner"><span class="italic-serif">functional digital experiences.</span></span></span>
+                </h2>
+              </div>
+
+              <!-- Right Column: Clean Body Narrative -->
+              <div class="about-col-right reveal-item">
+                <p class="body-text lead-text">
+                  I'm <strong>Purushottam Kumar</strong>, a B.Tech Computer Science Engineering student at <strong>Indus University</strong>, studying from <strong>2024–2028</strong>.
+                </p>
+                <p class="body-text">
+                  I'm interested in programming, web development, software development, problem solving and continuously learning technologies that help me build better digital products.
+                </p>
+                <p class="body-text">
+                  My approach focuses on architectural clarity, readable clean code, and creating intuitive interfaces that respect the user's attention. Whether writing algorithms or refining frontend layouts, I care deeply about precision and usability.
+                </p>
+              </div>
+            </div>
+
+            <!-- Minimal Information Strip with fine separators -->
+            <div class="info-strip reveal-item" role="region" aria-label="Quick Academic Facts">
+              <div class="info-item">
+                <span class="info-label">University</span>
+                <span class="info-value">Indus University</span>
+              </div>
+              <div class="info-divider" aria-hidden="true"></div>
+              <div class="info-item">
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.Tech in CSE</span>
+              </div>
+              <div class="info-divider" aria-hidden="true"></div>
+              <div class="info-item">
+                <span class="info-label">Period</span>
+                <span class="info-value">2024 — 2028</span>
+              </div>
+              <div class="info-divider" aria-hidden="true"></div>
+              <div class="info-item">
+                <span class="info-label">Core Focus</span>
+                <span class="info-value">Software Development</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SKILLS & TECHNOLOGIES SECTION -->
+          <section class="section-container skills-section" id="skills" aria-labelledby="skills-heading">
+            <div class="section-eyebrow reveal-item">
+              <span class="eyebrow-num">02</span>
+              <span class="eyebrow-text">Skills & Technologies</span>
+            </div>
+
+            <div class="section-header-wrap reveal-item">
+              <h2 class="section-title" id="skills-heading">
+                Technical competencies & <br>
+                <span class="italic-serif">engineering toolkit.</span>
+              </h2>
+              <p class="section-intro">
+                Disciplined foundation in computer science fundamentals paired with hands-on web and programming practice.
+              </p>
+            </div>
+
+            <!-- Skills Minimalist Grid -->
+            <div class="skills-grid">
+              
+              <!-- Category: Programming -->
+              <div class="skill-category-card reveal-item">
+                <div class="cat-header">
+                  <span class="cat-index">01</span>
+                  <h3 class="cat-title">Programming</h3>
+                </div>
+                <ul class="skill-badge-list">
+                  <li class="skill-badge">Python</li>
+                  <li class="skill-badge">C</li>
+                  <li class="skill-badge">C++</li>
+                  <li class="skill-badge">Java</li>
+                  <li class="skill-badge">JavaScript</li>
+                </ul>
+              </div>
+
+              <!-- Category: Frontend -->
+              <div class="skill-category-card reveal-item">
+                <div class="cat-header">
+                  <span class="cat-index">02</span>
+                  <h3 class="cat-title">Frontend</h3>
+                </div>
+                <ul class="skill-badge-list">
+                  <li class="skill-badge">HTML5</li>
+                  <li class="skill-badge">CSS3</li>
+                  <li class="skill-badge">JavaScript (ES6+)</li>
+                  <li class="skill-badge">Responsive Design</li>
+                  <li class="skill-badge">DOM Manipulation</li>
+                </ul>
+              </div>
+
+              <!-- Category: Database -->
+              <div class="skill-category-card reveal-item">
+                <div class="cat-header">
+                  <span class="cat-index">03</span>
+                  <h3 class="cat-title">Database</h3>
+                </div>
+                <ul class="skill-badge-list">
+                  <li class="skill-badge">SQL</li>
+                  <li class="skill-badge">MySQL</li>
+                  <li class="skill-badge">DBMS Concepts</li>
+                  <li class="skill-badge">Relational Design</li>
+                </ul>
+              </div>
+
+              <!-- Category: Computer Science -->
+              <div class="skill-category-card reveal-item">
+                <div class="cat-header">
+                  <span class="cat-index">04</span>
+                  <h3 class="cat-title">Computer Science</h3>
+                </div>
+                <ul class="skill-badge-list">
+                  <li class="skill-badge">Data Structures</li>
+                  <li class="skill-badge">Algorithms</li>
+                  <li class="skill-badge">OOP Principles</li>
+                  <li class="skill-badge">Computer Networks</li>
+                </ul>
+              </div>
+
+              <!-- Category: Tools -->
+              <div class="skill-category-card reveal-item">
+                <div class="cat-header">
+                  <span class="cat-index">05</span>
+                  <h3 class="cat-title">Tools & Workflow</h3>
+                </div>
+                <ul class="skill-badge-list">
+                  <li class="skill-badge">Git</li>
+                  <li class="skill-badge">GitHub</li>
+                  <li class="skill-badge">VS Code</li>
+                  <li class="skill-badge">Replit</li>
+                  <li class="skill-badge">Cisco Packet Tracer</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- PROJECTS SECTION (SELECTED WORK) -->
+          <section class="section-container projects-section" id="projects" aria-labelledby="projects-heading">
+            <div class="section-eyebrow reveal-item">
+              <span class="eyebrow-num">03</span>
+              <span class="eyebrow-text">Selected Work</span>
+            </div>
+
+            <div class="section-header-wrap reveal-item">
+              <h2 class="section-title" id="projects-heading">
+                Featured software & <br>
+                <span class="italic-serif">web applications.</span>
+              </h2>
+              <p class="section-intro">
+                A selection of purposeful projects demonstrating clean architecture, usability, and algorithmic problem-solving.
+              </p>
+            </div>
+
+            <div class="projects-stack">
+
+              <!-- Project 01: LevelUp Study -->
+              <article class="project-editorial-card reveal-item" data-project="levelup">
+                <div class="project-card-header">
+                  <div class="project-num-tag">
+                    <span class="project-index">01</span>
+                    <span class="project-type-badge">Productivity Platform</span>
+                  </div>
+                  <div class="project-links">
+                    <button class="project-link-btn view-details-trigger" data-title="LevelUp Study" data-summary="A gamified productivity platform designed to help students manage tasks, XP, streaks and academic progress." data-stack="HTML5, CSS3, JavaScript, LocalStorage" data-github="https://github.com">
+                      <span>View Details</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository for LevelUp Study">
+                      <span>GitHub</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project-content-grid">
+                  <div class="project-info-main">
+                    <h3 class="project-title">LevelUp Study</h3>
+                    <p class="project-desc">
+                      A gamified productivity platform designed to help students manage tasks, XP, streaks and academic progress with motivating reward mechanics and habit tracking.
+                    </p>
+                    <div class="project-tech-pills">
+                      <span class="tech-pill">HTML5</span>
+                      <span class="tech-pill">CSS3</span>
+                      <span class="tech-pill">JavaScript</span>
+                      <span class="tech-pill">LocalStorage Engine</span>
+                    </div>
+                  </div>
+                  <div class="project-visual-preview">
+                    <div class="preview-glass-box">
+                      <div class="preview-status-row">
+                        <span class="mini-tag">XP Tracker</span>
+                        <span class="mini-val">+450 XP Today</span>
+                      </div>
+                      <div class="preview-meter-bar">
+                        <div class="meter-fill"></div>
+                      </div>
+                      <div class="preview-stats-row">
+                        <span>Current Streak: <strong>14 Days 🔥</strong></span>
+                        <span>Level: <strong>Scholar II</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 02: Student Daily Planner -->
+              <article class="project-editorial-card layout-reversed reveal-item" data-project="planner">
+                <div class="project-card-header">
+                  <div class="project-num-tag">
+                    <span class="project-index">02</span>
+                    <span class="project-type-badge">Academic Utility</span>
+                  </div>
+                  <div class="project-links">
+                    <button class="project-link-btn view-details-trigger" data-title="Student Daily Planner" data-summary="An intuitive day-planning and task scheduling application built to organize academic routines, timetable deadlines, and exam preparation." data-stack="HTML5, CSS Grid, Vanilla JavaScript" data-github="https://github.com">
+                      <span>View Details</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository for Student Daily Planner">
+                      <span>GitHub</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project-content-grid">
+                  <div class="project-info-main">
+                    <h3 class="project-title">Student Daily Planner</h3>
+                    <p class="project-desc">
+                      An intuitive day-planning and timetable scheduling application built to organize academic routines, lecture schedules, and study priorities seamlessly.
+                    </p>
+                    <div class="project-tech-pills">
+                      <span class="tech-pill">JavaScript</span>
+                      <span class="tech-pill">CSS Grid Layouts</span>
+                      <span class="tech-pill">State Persistence</span>
+                      <span class="tech-pill">UI Micro-interactions</span>
+                    </div>
+                  </div>
+                  <div class="project-visual-preview">
+                    <div class="preview-glass-box">
+                      <div class="preview-checklist-item completed">
+                        <span class="check-box">✓</span>
+                        <span class="task-text">DSA: Binary Trees Revision</span>
+                      </div>
+                      <div class="preview-checklist-item in-progress">
+                        <span class="check-box">•</span>
+                        <span class="task-text">DBMS Lab Assignment #03</span>
+                      </div>
+                      <div class="preview-checklist-item">
+                        <span class="check-box">○</span>
+                        <span class="task-text">Web Architecture Notes</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 03: Personal Portfolio -->
+              <article class="project-editorial-card reveal-item" data-project="portfolio">
+                <div class="project-card-header">
+                  <div class="project-num-tag">
+                    <span class="project-index">03</span>
+                    <span class="project-type-badge">Web Architecture & UI</span>
+                  </div>
+                  <div class="project-links">
+                    <button class="project-link-btn view-details-trigger" data-title="Personal Portfolio" data-summary="An editorial-grade, minimalist personal brand showcase designed with luxury aesthetic principles, CSS-only decorative graphics, and zero dependencies." data-stack="HTML5, CSS3 Custom Properties, Vanilla JavaScript" data-github="https://github.com">
+                      <span>View Details</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository for Personal Portfolio">
+                      <span>GitHub</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project-content-grid">
+                  <div class="project-info-main">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-desc">
+                      An editorial-grade, minimalist personal brand showcase designed with luxury aesthetic principles, CSS-only decorative geometry, and zero dependencies.
+                    </p>
+                    <div class="project-tech-pills">
+                      <span class="tech-pill">Semantic HTML5</span>
+                      <span class="tech-pill">Vanilla CSS3</span>
+                      <span class="tech-pill">Glassmorphism</span>
+                      <span class="tech-pill">Responsive Design</span>
+                    </div>
+                  </div>
+                  <div class="project-visual-preview">
+                    <div class="preview-glass-box code-card">
+                      <div class="code-line"><span class="code-kw">const</span> developer = {</div>
+                      <div class="code-line indent"><span class="code-prop">name</span>: <span class="code-str">"Purushottam"</span>,</div>
+                      <div class="code-line indent"><span class="code-prop">focus</span>: <span class="code-str">"Software Craft"</span>,</div>
+                      <div class="code-line">};</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 04: Python Mini Projects -->
+              <article class="project-editorial-card layout-reversed reveal-item" data-project="python-suite">
+                <div class="project-card-header">
+                  <div class="project-num-tag">
+                    <span class="project-index">04</span>
+                    <span class="project-type-badge">Algorithmic Suite</span>
+                  </div>
+                  <div class="project-links">
+                    <button class="project-link-btn view-details-trigger" data-title="Python Mini Projects Suite" data-summary="A curated suite of Python utilities, algorithmic solvers, CLI automation tools, and data processing scripts built to hone computational thinking." data-stack="Python 3, Algorithms, File Handling, CLI" data-github="https://github.com">
+                      <span>View Details</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository for Python Mini Projects">
+                      <span>GitHub</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project-content-grid">
+                  <div class="project-info-main">
+                    <h3 class="project-title">Python Mini Projects</h3>
+                    <p class="project-desc">
+                      A curated repository of algorithmic solvers, terminal utilities, automation tools, and data structure simulations exploring clean algorithmic efficiency.
+                    </p>
+                    <div class="project-tech-pills">
+                      <span class="tech-pill">Python 3</span>
+                      <span class="tech-pill">Data Structures</span>
+                      <span class="tech-pill">File I/O</span>
+                      <span class="tech-pill">CLI Utilities</span>
+                    </div>
+                  </div>
+                  <div class="project-visual-preview">
+                    <div class="preview-glass-box terminal-card">
+                      <div class="term-line"><span class="term-prompt">$</span> python run_suite.py</div>
+                      <div class="term-line success">✓ 14 Test Suites Passed</div>
+                      <div class="term-line info">⚡ Time: O(n log n) | Mem: Optimal</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- EDUCATION SECTION -->
+          <section class="section-container education-section" id="education" aria-labelledby="education-heading">
+            <div class="section-eyebrow reveal-item">
+              <span class="eyebrow-num">04</span>
+              <span class="eyebrow-text">Education</span>
+            </div>
+
+            <div class="section-header-wrap reveal-item">
+              <h2 class="section-title" id="education-heading">
+                Academic foundation & <br>
+                <span class="italic-serif">core curriculum.</span>
+              </h2>
+            </div>
+
+            <!-- Clean Timeline Layout -->
+            <div class="education-timeline reveal-item">
+              <div class="timeline-card">
+                <div class="timeline-period-badge">2024 — 2028</div>
+                
+                <div class="timeline-content">
+                  <div class="timeline-head">
+                    <h3 class="degree-title">B.Tech in Computer Science Engineering</h3>
+                    <div class="institution-name">Indus University</div>
+                  </div>
+                  
+                  <p class="degree-desc">
+                    Pursuing in-depth theoretical and applied education across computer systems, algorithmic complexity, software engineering methodologies, and database systems.
+                  </p>
+
+                  <div class="coursework-block">
+                    <span class="coursework-title">Relevant Coursework:</span>
+                    <ul class="coursework-pills">
+                      <li>Data Structures & Algorithms</li>
+                      <li>Web Technologies</li>
+                      <li>Python Programming</li>
+                      <li>Database Management Systems</li>
+                      <li>Computer Networks</li>
+                      <li>Object-Oriented Programming</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CURRENTLY EXPLORING SECTION -->
+          <section class="section-container exploring-section reveal-item" aria-labelledby="exploring-heading">
+            <div class="exploring-card">
+              <div class="exploring-header">
+                <span class="exploring-dot"></span>
+                <h3 class="exploring-title" id="exploring-heading">Currently Exploring & Expanding Knowledge</h3>
+              </div>
+              <p class="exploring-subtitle">Actively deepening expertise across these active study tracks:</p>
+              
+              <div class="exploring-pills-row">
+                <span class="exploring-pill">Data Structures & Algorithms</span>
+                <span class="exploring-pill">JavaScript Internals</span>
+                <span class="exploring-pill">Full-Stack Development</span>
+                <span class="exploring-pill">Software Engineering Principles</span>
+                <span class="exploring-pill">Problem Solving</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACT SECTION -->
+          <section class="section-container contact-section" id="contact" aria-labelledby="contact-heading">
+            <div class="section-eyebrow reveal-item">
+              <span class="eyebrow-num">05</span>
+              <span class="eyebrow-text">Get in Touch</span>
+            </div>
+
+            <div class="contact-card-wrap reveal-item">
+              <div class="contact-header-content">
+                <h2 class="contact-headline" id="contact-heading">
+                  <span class="headline-mask-line"><span class="headline-mask-inner">Let's build something</span></span>
+                  <span class="headline-mask-line"><span class="headline-mask-inner"><em class="serif-accent">meaningful.</em></span></span>
+                </h2>
+                <p class="contact-subtext">
+                  I'm currently open to internship opportunities, collaborations, open-source initiatives, and interesting projects. Feel free to reach out anytime.
+                </p>
+
+                <!-- Direct Social & Email Quick Action Buttons -->
+                <div class="contact-quick-actions">
+                  <a href="mailto:purushottam.dev.connect@gmail.com" class="btn-pill btn-contact-action">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.75 3.5H12.25V10.5H1.75V3.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.75 3.5L7 7.58333L12.25 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Email Me</span>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-pill btn-contact-action">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.333 4.667a3.5 3.5 0 0 1 3.5 3.5V12.25H9.917V8.167c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5v4.083H4.083V4.667h2.834v1.166a3.5 3.5 0 0 1 2.416-1.166zM1.75 4.667h2.333V12.25H1.75zM2.917 1.75a1.167 1.167 0 1 1 0 2.333 1.167 1.167 0 0 1 0-2.333z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pill btn-contact-action">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.25 11.083c-2.917.875-2.917-1.458-4.083-1.75M8.75 12.25V9.917a1.94 1.94 0 0 0-.548-1.5c1.82-.204 3.731-.893 3.731-4.043 0-.898-.32-1.633-.846-2.205a2.86 2.86 0 0 0-.076-2.17s-.694-.222-2.27.846A7.88 7.88 0 0 0 7 0.72a7.88 7.88 0 0 0-1.741.125c-1.576-1.068-2.27-.846-2.27-.846a2.86 2.86 0 0 0-.076 2.17c-.525.572-.846 1.307-.846 2.205 0 3.15 1.91 3.839 3.731 4.043a1.94 1.94 0 0 0-.548 1.5V12.25" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Minimal Clean Contact Form -->
+              <form class="minimal-contact-form" id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="form-name" class="form-label">Your Name</label>
+                    <div class="input-control-wrap">
+                      <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                      <span class="input-focus-line" aria-hidden="true"></span>
+                    </div>
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="form-email" class="form-label">Your Email</label>
+                    <div class="input-control-wrap">
+                      <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required autocomplete="email">
+                      <span class="input-focus-line" aria-hidden="true"></span>
+                    </div>
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Your Message</label>
+                  <div class="input-control-wrap">
+                    <textarea id="form-message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell me about your project, idea, or opportunity..." required></textarea>
+                    <span class="input-focus-line" aria-hidden="true"></span>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn-pill btn-primary-dark btn-submit" id="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12.25 1.75L6.417 7.583M12.25 1.75L8.167 12.25L6.417 7.583L1.75 5.833L12.25 1.75Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <p class="form-note">I typically respond within 24–48 hours.</p>
+                </div>
+                
+                <!-- Success / Alert Container -->
+                <div class="form-status-alert" id="form-status" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </section>
+
+        </main>
+
+        <!-- MINIMAL FOOTER -->
+        <footer class="portfolio-footer">
+          <div class="footer-left">
+            <span class="footer-name">Purushottam Kumar</span>
+            <span class="footer-role">Computer Science Student & Developer</span>
+          </div>
+
+          <div class="footer-center">
+            <span class="footer-institution">Indus University · 2024–2028</span>
+          </div>
+
+          <div class="footer-right">
+            <span class="footer-copy">© <span id="current-year">2026</span> All rights reserved.</span>
+            <a href="#top" class="back-to-top-btn" aria-label="Back to top of page">
+              <span>Top</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8V2M5 2L2 5M5 2L8 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </footer>
+
+      </div> <!-- /central-presentation-frame -->
+
+    </div> <!-- /portfolio-canvas -->
+
+  </div> <!-- /outer-viewport -->
+
+  <!-- RESUME / CV MODAL -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-eyebrow">Curriculum Vitae</span>
+          <h3 class="modal-title" id="resume-modal-title">Purushottam Kumar</h3>
+        </div>
+        <button class="modal-close-btn" id="close-resume-btn" aria-label="Close CV preview">&times;</button>
+      </div>
+
+      <div class="modal-body resume-preview-body">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h4>Purushottam Kumar</h4>
+            <p class="resume-sub">Computer Science Engineering Student | Indus University (2024–2028)</p>
+            <p class="resume-contact-line">India · purushottam.dev.connect@gmail.com · GitHub · LinkedIn</p>
+          </div>
+
+          <div class="resume-sec">
+            <h5>Academic Background</h5>
+            <div class="resume-entry">
+              <div class="entry-row">
+                <strong>B.Tech in Computer Science Engineering</strong>
+                <span>2024 — 2028</span>
+              </div>
+              <div class="entry-sub">Indus University</div>
+              <p class="entry-detail">Focus: Data Structures, Object-Oriented Design, Web Engineering, Database Systems.</p>
+            </div>
+          </div>
+
+          <div class="resume-sec">
+            <h5>Technical Toolkit</h5>
+            <p><strong>Languages:</strong> Python, C, C++, Java, JavaScript (ES6+)</p>
+            <p><strong>Web Technologies:</strong> HTML5, CSS3, DOM API, Responsive Web Design</p>
+            <p><strong>Database & CS:</strong> SQL, MySQL, DBMS, Data Structures & Algorithms, OOP, Networks</p>
+            <p><strong>Tools:</strong> Git, GitHub, VS Code, Replit, Cisco Packet Tracer</p>
+          </div>
+
+          <div class="resume-sec">
+            <h5>Key Projects</h5>
+            <div class="resume-entry">
+              <strong>LevelUp Study:</strong> Gamified student productivity application with streak mechanics & state persistence.
+            </div>
+            <div class="resume-entry">
+              <strong>Student Daily Planner:</strong> Timetable & task planning utility with modular JavaScript architecture.
+            </div>
+            <div class="resume-entry">
+              <strong>Python Mini Projects:</strong> Algorithmic solvers, data analysis utilities & CLI tools.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-pill btn-primary-dark" id="print-resume-btn">
+          <span>Print / Save as PDF</span>
+        </button>
+        <button class="btn-pill btn-subtle-glass modal-dismiss-btn">
+          <span>Close Preview</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="project-detail-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-proj-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-eyebrow">Project Deep Dive</span>
+          <h3 class="modal-title" id="modal-proj-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-proj-modal-btn" aria-label="Close project details">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-proj-body">
+        <p id="modal-proj-desc" class="modal-proj-text"></p>
+        <div class="modal-stack-wrap">
+          <span class="modal-stack-label">Technologies Used:</span>
+          <div id="modal-proj-tags" class="modal-tech-tags"></div>
+        </div>
+        <div class="modal-highlights-box">
+          <h4>Engineering Highlights:</h4>
+          <ul id="modal-proj-highlights">
+            <li>Clean, modular architecture without external bloated frameworks.</li>
+            <li>Optimized for fast load speeds, accessible semantics, and fluid responsiveness.</li>
+            <li>Strict adherence to standard data structures and algorithmic best practices.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pill btn-primary-dark" id="modal-proj-github">
+          <span>View on GitHub</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="btn-pill btn-subtle-glass modal-dismiss-btn">
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
